@@ -29,7 +29,10 @@ public class EnemyBehaviour : MonoBehaviour
     public float detectionRange =4;
     public float fieldOfView = 60f;
     public Vector3 lastKnownPlayerPos;
+    public Quaternion lastKnownPlayerLookRotation;
     public float reachDistance = 0.2f;
+    [Range(0.1f,3f)]
+    public float rotationSpeed = 1f;
 
     public float gunDamage = 10f;
     public float gunRateOfFire = 2f;
@@ -54,6 +57,7 @@ public class EnemyBehaviour : MonoBehaviour
         if(DetectPlayer())
         {
             lastKnownPlayerPos = playerTransform.position;
+            lastKnownPlayerLookRotation = playerTransform.rotation;
             SwtichState(enemyAttackState);
         }
         else
@@ -86,9 +90,9 @@ public class EnemyBehaviour : MonoBehaviour
             return false;
 
         //Raycast 
-        if(Physics.Raycast(transform.position,directionToPlayer.normalized,out RaycastHit hit, detectionRange,~bulletLayer))
+        if(Physics.Raycast(enemyEyeTranform.position,directionToPlayer.normalized,out RaycastHit hit, detectionRange,~bulletLayer))
         {
-            Debug.Log(hit.transform == playerTransform);
+            
             if(hit.transform == playerTransform)
             {
                 return true;
@@ -100,6 +104,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void ShotAtPlayer()
     {
+
         Instantiate(bulletPrefab,gunPointTranform.position,gunPointTranform.rotation);
     }
 

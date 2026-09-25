@@ -5,7 +5,7 @@ public class EnemyAttackState : EnemyState
 
     private float nextShotTime;
     private EnemyBehaviour enemyBehaviour;
-    private float rotationSpeed =1f;
+   
     public override void EnterState(EnemyBehaviour enemyBehaviour)
     {
         this.enemyBehaviour = enemyBehaviour;
@@ -41,7 +41,7 @@ public class EnemyAttackState : EnemyState
             enemyBehaviour.transform.rotation = Quaternion.Slerp(
                 enemyBehaviour.transform.rotation,
                 targetRotation,
-                rotationSpeed * Time.deltaTime
+                enemyBehaviour.rotationSpeed * Time.deltaTime
             );
         }
     }

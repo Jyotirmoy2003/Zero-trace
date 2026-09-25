@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 261212271}
   - component: {fileID: 261212270}
   - component: {fileID: 261212269}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 278842759}
   - component: {fileID: 278842758}
   - component: {fileID: 278842757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4862745, g: 0.9882354, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -605,8 +605,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.40220016, y: -0.5873907, z: 0.41911283, w: -0.56351715}
-  m_LocalPosition: {x: -4.9028873, y: 15.8736515, z: 1.1800117}
+  m_LocalRotation: {x: -0.35519877, y: -0.622151, z: 0.3756187, w: -0.5879392}
+  m_LocalPosition: {x: -19.617863, y: 41.79269, z: -0.55208224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 422242962}
   - component: {fileID: 422242961}
   - component: {fileID: 422242960}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 778806840}
   - component: {fileID: 778806839}
   - component: {fileID: 778806838}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   - component: {fileID: 828418579}
   - component: {fileID: 828418578}
   - component: {fileID: 828418577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 852290162}
   - component: {fileID: 852290161}
   - component: {fileID: 852290160}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   - component: {fileID: 901350520}
   - component: {fileID: 901350519}
   - component: {fileID: 901350518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 990042040}
   - component: {fileID: 990042039}
   - component: {fileID: 990042038}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 1143303399}
   - component: {fileID: 1143303398}
   - component: {fileID: 1143303397}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1843,7 +1843,9 @@ MonoBehaviour:
   detectionRange: 8
   fieldOfView: 80
   lastKnownPlayerPos: {x: 0, y: 0, z: 0}
+  lastKnownPlayerLookRotation: {x: 0, y: 0, z: 0, w: 0}
   reachDistance: 0.2
+  rotationSpeed: 1
   gunDamage: 10
   gunRateOfFire: 2
   bulletLayer:
@@ -1894,7 +1896,7 @@ GameObject:
   - component: {fileID: 1213970135}
   - component: {fileID: 1213970134}
   - component: {fileID: 1213970133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2008,7 @@ GameObject:
   - component: {fileID: 1316310059}
   - component: {fileID: 1316310058}
   - component: {fileID: 1316310057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2118,7 +2120,7 @@ GameObject:
   - component: {fileID: 1415118736}
   - component: {fileID: 1415118735}
   - component: {fileID: 1415118734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,7 +2443,7 @@ GameObject:
   - component: {fileID: 1526161690}
   - component: {fileID: 1526161689}
   - component: {fileID: 1526161688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2553,7 +2555,7 @@ GameObject:
   - component: {fileID: 1575084705}
   - component: {fileID: 1575084704}
   - component: {fileID: 1575084703}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2665,7 +2667,7 @@ GameObject:
   - component: {fileID: 1625094575}
   - component: {fileID: 1625094574}
   - component: {fileID: 1625094573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2777,7 +2779,7 @@ GameObject:
   - component: {fileID: 1659072379}
   - component: {fileID: 1659072378}
   - component: {fileID: 1659072377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Obs (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ public class EnemyIdleState : EnemyState
 
     public override void EnterState(EnemyBehaviour enemyBehaviour)
     {
-        
+        enemyBehaviour.e_EnemyState = E_EnemyState.Idle;
     }
 
     public override void ExitState(EnemyBehaviour enemyBehaviour)

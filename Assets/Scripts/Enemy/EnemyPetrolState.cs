@@ -5,7 +5,6 @@ public class EnemyPetrolState : EnemyState
 
     EnemyBehaviour enemyBehaviour;
     private int index = -1;
-    float reachDistance = 0.2f;
     private bool goingBack;
 
     void AssignNewPetrolPoint()
@@ -46,6 +45,7 @@ public class EnemyPetrolState : EnemyState
     public override void EnterState(EnemyBehaviour enemyBehaviour)
     {
         this.enemyBehaviour = enemyBehaviour;
+        enemyBehaviour.e_EnemyState = E_EnemyState.Petrol;
         AssignNewPetrolPoint();
     }
 
@@ -56,7 +56,7 @@ public class EnemyPetrolState : EnemyState
 
     public override void UpdateState(EnemyBehaviour enemyBehaviour)
     {
-        if(enemyBehaviour.navMeshAgent.remainingDistance <= reachDistance) // reached to the point
+        if(enemyBehaviour.navMeshAgent.remainingDistance <= enemyBehaviour.reachDistance) // reached to the point
         {
             enemyBehaviour.SwtichState(enemyBehaviour.enemyIdleState);
         }

@@ -4,7 +4,7 @@ public class EnemyIdleState : EnemyState
 {
 
     private float timmer = 0;
-    private float waitTime = 3f;
+    private float waitTime = 10f;
 
 
     public override void EnterState(EnemyBehaviour enemyBehaviour)

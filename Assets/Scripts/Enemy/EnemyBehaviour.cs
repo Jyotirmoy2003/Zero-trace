@@ -58,7 +58,10 @@ public class EnemyBehaviour : MonoBehaviour
         {
             lastKnownPlayerPos = playerTransform.position;
             lastKnownPlayerLookRotation = playerTransform.rotation;
+            
             SwtichState(enemyAttackState);
+            //tell the hive mind
+            Hivemind.Instance.PlayerSeen(lastKnownPlayerPos,lastKnownPlayerLookRotation,this);
         }
         else
         {
@@ -131,6 +134,18 @@ public class EnemyBehaviour : MonoBehaviour
         );
     }
 
+    public void CheckPlayer(Vector3 lastknownPos,Quaternion lastKnownRotaiton)
+    {
+        if(currentState == enemyAttackState)
+        {
+            Debug.Log("already attcking player");
+            return;
+        }
+        lastKnownPlayerLookRotation = lastKnownRotaiton;
+        lastKnownPlayerPos= lastknownPos;
+        SwtichState(enemyChaseState);
+
+    }
 }
 
 
